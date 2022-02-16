@@ -1,0 +1,1 @@
+{"uuid":"a9131ac2-24b4-4f96-a4db-bd2f6de761e0","name":"ui.tests.AnnotationsTestNG.screenShot","description":"","start":1640543607741,"stop":1640543607741,"children":["1605e5d5-b1d3-49ee-ae52-5f633d160ebc"],"afters":[{"name":"screenShot","status":"passed","stage":"finished","description":"","start":1640543607741,"stop":1640543607741}]}

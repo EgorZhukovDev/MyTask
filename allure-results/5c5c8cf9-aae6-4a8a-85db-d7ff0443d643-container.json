@@ -1,0 +1,1 @@
+{"uuid":"5c5c8cf9-aae6-4a8a-85db-d7ff0443d643","name":"ui.tests.AnnotationsTestNG.checkLogin","description":"","start":1640543433315,"stop":1640543433315,"children":["1f818bb8-a87e-4bcb-85a9-ea25ed743fa2"],"befores":[{"name":"checkLogin","status":"passed","stage":"finished","description":"","start":1640543433315,"stop":1640543433315}]}
