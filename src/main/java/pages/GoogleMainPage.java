@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,13 +14,20 @@ public class GoogleMainPage {
         this.driver = driver;
     }
 
-    @FindBy(xpath = "//div[@class='gb_z gb_ed gb_f gb_xf']")
+    @FindBy(xpath = "//div[@class='gb_z gb_hd gb_f gb_Af']")
     private WebElement applicationsButton;
+
+    @FindBy(xpath = "//a[@class='tX9u1b']/div[@class='NcWGte']")
+    private WebElement applicationsButtonYouTube;
 
     @FindBy(xpath = "//input[@class='gLFyf gsfi']")
     private WebElement searchGoogleInput;
 
     public GoogleMainPage clickAppButton(){
+        applicationsButton.click();
+        return this;
+    }
+    public GoogleMainPage clickYouTubeButton(){
         applicationsButton.click();
         return this;
     }
