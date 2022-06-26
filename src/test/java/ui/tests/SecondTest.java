@@ -18,7 +18,8 @@ public class SecondTest {
         googleMainPage = new GoogleMainPage(webDriver);
     }
     @AfterClass
-    public void afterClass() {
+    public void afterClass() throws InterruptedException {
+        Thread.sleep(5000);
         BrowserManager.quit();
     }
 

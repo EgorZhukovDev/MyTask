@@ -2,7 +2,8 @@ package enuns;
 
 public enum Browser {
 
-    CHROME("chrome");
+    CHROME("chrome"),
+    FIREFOX("firefox");
 
     private String browserType;
 
