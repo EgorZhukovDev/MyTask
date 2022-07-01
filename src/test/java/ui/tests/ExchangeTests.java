@@ -27,6 +27,7 @@ public class ExchangeTests {
     @BeforeClass
     public void beforeClass() {
         webDriver = BrowserManager.initialize();
+        webDriver.get("https://www.paysera.lt/v2/en-LT/fees/currency-conversion-calculator#/");
         currencyExchangeCalculatorPage = new CurrencyExchangeCalculatorPage(webDriver);
         countryLanguagePage = new CountryLanguagePage(webDriver);
     }

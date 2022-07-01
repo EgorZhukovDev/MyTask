@@ -15,6 +15,7 @@ public class SecondTest {
     @BeforeClass
     public void beforeClass() {
         webDriver = BrowserManager.initialize();
+        webDriver.get("https://google.com");
         googleMainPage = new GoogleMainPage(webDriver);
     }
     @AfterClass

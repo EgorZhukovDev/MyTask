@@ -2,6 +2,7 @@ package ui.tests;
 
 import driver.BrowserManager;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -21,14 +22,9 @@ public class ThirdTest {
     public void afterClass() {
         BrowserManager.quit();
     }
-
     @Test
-    public void someTest() {
-        googleMainPage.clickAppButton().clickYouTubeButton();
+    public void searhingTest(){
+        googleMainPage.searchSomething("download postman");
+        Assert.assertFalse(googleMainPage.checkSearchFieldAmountIsEmpty(), "Field is not empty");
     }
-//    @Test
-//    public void searhingTest(){
-//        googleMainPage.searchSomething("download postman");
-//        Assert.assertFalse(googleMainPage.checkSearchFieldAmountIsEmpty(), "Field is not empty");
-//    }
 }
