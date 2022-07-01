@@ -1,15 +1,14 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPageGuru {
     public WebDriver driver;
 
-    public LoginPage(WebDriver driver) {
+    public LoginPageGuru(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
@@ -23,7 +22,7 @@ public class LoginPage {
     @FindBy(xpath = "//input[@name='btnLogin']")
     private WebElement enter;
 
-    public LoginPage login(String login, String password){
+    public LoginPageGuru login(String login, String password){
         loginInput.sendKeys(login);
         passwordInput.sendKeys(password);
         enter.click();

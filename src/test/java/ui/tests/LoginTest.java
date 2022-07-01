@@ -5,18 +5,19 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pages.LoginPage;
+import pages.LoginPageGuru;
 
 import java.util.concurrent.TimeUnit;
 
 public class LoginTest {
     public static WebDriver webDriver;
-    public static LoginPage loginPage;
+    public static LoginPageGuru loginPageGuru;
+
 
     @BeforeClass
     public void beforeClass() {
         webDriver = BrowserManager.initialize();
-        loginPage = new LoginPage(webDriver);
+        loginPageGuru = new LoginPageGuru(webDriver);
         webDriver.get("https://demo.guru99.com/V4/");
     }
     @AfterClass
@@ -27,6 +28,6 @@ public class LoginTest {
     @Test
     public void loginTest(){
         webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        loginPage.login("mngr399867", "ubadUdu");
+        loginPageGuru.login("mngr399867", "ubadUdu");
     }
 }
