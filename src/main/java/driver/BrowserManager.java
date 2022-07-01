@@ -27,7 +27,7 @@ public class BrowserManager {
             driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
             driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
             driver.manage().window().maximize();
-//            driver.get(Constants.url);
+            driver.get(Constants.url);
         }
         return driver;
     }
