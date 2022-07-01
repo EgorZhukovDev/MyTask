@@ -16,17 +16,17 @@ public class LoginTest {
     @BeforeClass
     public void beforeClass() {
         webDriver = BrowserManager.initialize();
-        webDriver.get("https://demo.guru99.com/V4/");
         loginPage = new LoginPage(webDriver);
+        webDriver.get("https://demo.guru99.com/V4/");
     }
     @AfterClass
-    public void afterClass() throws InterruptedException{
-        Thread.sleep(5000);
+    public void afterClass() {
         BrowserManager.quit();
     }
 
     @Test
     public void loginTest(){
-        loginPage.login("mngr421802", "ezUbAze");
+        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        loginPage.login("mngr399867", "ubadUdu");
     }
 }

@@ -22,6 +22,11 @@ public class ThirdTest {
     public void afterClass() {
         BrowserManager.quit();
     }
+
+//    @Test
+//    public void someTest() {
+//        googleMainPage.clickAppButton().clickYouTubeButton();
+//    }
     @Test
     public void searhingTest(){
         googleMainPage.searchSomething("download postman");

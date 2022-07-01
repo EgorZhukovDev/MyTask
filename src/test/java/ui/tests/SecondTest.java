@@ -15,8 +15,8 @@ public class SecondTest {
     @BeforeClass
     public void beforeClass() {
         webDriver = BrowserManager.initialize();
-        webDriver.get("https://google.com");
         googleMainPage = new GoogleMainPage(webDriver);
+        webDriver.get("https://google.com");
     }
     @AfterClass
     public void afterClass() throws InterruptedException {
