@@ -41,7 +41,6 @@ public class WikiLoginTest {
         wikiLoginPage.inputName(name);
         wikiLoginPage.inputPassword(password);
         wikiLoginPage.clickLoginButton();
-
         Assert.assertEquals(wikiMainPage.getUserName(), name);
     }
 }

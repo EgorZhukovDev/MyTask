@@ -32,14 +32,8 @@ public class BbcTest {
 
     @Test
     public void searchingTest2(){
-        bbCpage.findReelField();
-        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         bbCpage.clickOnReelButtonOnBbc();
-    }
-
-    @Test
-    public void searchingTest3(){
-        bbCpage.findSectionField();
+        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
 }

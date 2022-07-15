@@ -19,6 +19,7 @@ public class LoginTest {
         webDriver = BrowserManager.initialize();
         loginPageGuru = new LoginPageGuru(webDriver);
         webDriver.get("https://demo.guru99.com/V4/");
+        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
     @AfterClass
     public void afterClass() {
@@ -27,7 +28,9 @@ public class LoginTest {
 
     @Test
     public void loginTest(){
-        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        loginPageGuru.login("mngr399867", "ubadUdu");
+        loginPageGuru.setUserName("mngr421802");
+        loginPageGuru.setUserPassword("ezUbAze");
+        webDriver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+        loginPageGuru.clickEnterButton();
     }
 }

@@ -22,10 +22,14 @@ public class LoginPageGuru {
     @FindBy(xpath = "//input[@name='btnLogin']")
     private WebElement enter;
 
-    public LoginPageGuru login(String login, String password){
-        loginInput.sendKeys(login);
+    public void setUserName(String name){
+        loginInput.sendKeys(name);
+
+    }
+    public void setUserPassword(String password){
         passwordInput.sendKeys(password);
+    }
+    public void clickEnterButton(){
         enter.click();
-        return this;
     }
 }
